@@ -1,0 +1,19 @@
+// Toinput anyfivedigit number and then reverse number using while loop
+
+public class WhileloopReversenumber
+{
+    public static void main(String[]args)
+        {
+            int number=123456,reverse=0;
+
+            //using while loop to reverse number
+            while(number!=0)
+            {
+                int remainder=number%10;
+                reverse=reverse*10+remainder;
+                number=number/10;
+            }
+            System.out.println("the reverse of the number given is:"+reverse);
+        }
+    }
+
